@@ -1,0 +1,62 @@
+@import "_variables";
+@import "_mixins";
+
+/* PRODUCT SECTION */
+.product-container {
+  //Max-width keeps the cards from not being stretched
+  /* max-width: 1440px; */
+  @include grid-6;
+  grid-gap: 10px;
+  margin-bottom: 50px;
+}
+.product-card {
+  //Min-width keeps the cards from not being squeezed
+  /* min-width: 224px; */
+  border: 1px solid black;
+}
+.image-container {
+  min-height: 180px;
+  border: 1px solid black;
+  text-align: center;
+  p {
+    padding-top: 65px;
+  }
+}
+.info-container {
+  text-align: center;
+}
+/* PRODUCT SECTION ENDS*/
+
+/* SHIPPING SECTION */
+.shipping {
+  @include grid-3;
+  grid-gap: 0.5em;
+  min-height: 300px;
+}
+.shipping > div {
+  background: #eee;
+  padding: 1em;
+}
+.shipping-content {
+  text-align: center;
+  padding-top: 100px;
+}
+/* SHIPPING SECTION ENDS */
+
+/* SALES SECTION */
+.sales-container {
+  @include grid-2;
+  grid-gap: 0.5em;
+  margin-bottom: 50px;
+}
+.christmas-sale {
+  background-color: grey;
+  text-align: center;
+}
+.discount-percentage {
+  background-color: rgba(128, 128, 128, 0.543);
+  text-align: center;
+  height: 350px;
+}
+
+/* SALES SECTION ENDS*/

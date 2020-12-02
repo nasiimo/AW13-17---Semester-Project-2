@@ -1,0 +1,79 @@
+/* HEADER SECTION */
+
+/* HEADER SECTION ENDS*/
+
+/* PRODUCT SECTION */
+.product-container {
+  /* max-width: 1440px; */
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin-bottom: 50px;
+}
+
+.product-card {
+  /* min-width: 224px; */
+  border: 1px solid black;
+}
+
+.image-container {
+  min-height: 180px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.image-container p {
+  padding-top: 65px;
+}
+
+.info-container {
+  text-align: center;
+}
+
+/* PRODUCT SECTION ENDS*/
+/* SHIPPING SECTION */
+.shipping {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.5em;
+  min-height: 300px;
+}
+
+.shipping > div {
+  background: #eee;
+  padding: 1em;
+}
+
+.shipping-content {
+  text-align: center;
+  padding-top: 100px;
+}
+
+/* SHIPPING SECTION ENDS */
+/* SALES SECTION */
+.sales-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.5em;
+  margin-bottom: 50px;
+}
+
+.christmas-sale {
+  background-color: grey;
+  text-align: center;
+}
+
+.discount-percentage {
+  background-color: rgba(128, 128, 128, 0.543);
+  text-align: center;
+  height: 350px;
+}
+
+/* SALES SECTION ENDS*/
+/*# sourceMappingURL=style.css.map */

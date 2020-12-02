@@ -1,0 +1,19 @@
+@mixin grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@mixin grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@mixin grid-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@mixin grid-6 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
