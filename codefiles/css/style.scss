@@ -1,31 +1,26 @@
 @import "_variables";
 @import "_mixins";
+@import "_header";
+@import "_products";
 
-/* PRODUCT SECTION */
-.product-container {
-  //Max-width keeps the cards from not being stretched
-  /* max-width: 1440px; */
-  @include grid-6;
-  grid-gap: 10px;
+/* SALES SECTION */
+.sales-container {
+  @include grid-2;
+  grid-gap: 0.5em;
   margin-bottom: 50px;
 }
-.product-card {
-  //Min-width keeps the cards from not being squeezed
-  /* min-width: 224px; */
-  border: 1px solid black;
-}
-.image-container {
-  min-height: 180px;
-  border: 1px solid black;
+.christmas-sale {
+  background-color: grey;
   text-align: center;
-  p {
-    padding-top: 65px;
-  }
+  height: 50vh;
 }
-.info-container {
+.discount-percentage {
+  background-color: rgba(128, 128, 128, 0.543);
   text-align: center;
+  height: 350px;
+  height: 50vh;
 }
-/* PRODUCT SECTION ENDS*/
+/* SALES SECTION ENDS*/
 
 /* SHIPPING SECTION */
 .shipping {
@@ -43,20 +38,36 @@
 }
 /* SHIPPING SECTION ENDS */
 
-/* SALES SECTION */
-.sales-container {
-  @include grid-2;
-  grid-gap: 0.5em;
-  margin-bottom: 50px;
-}
-.christmas-sale {
-  background-color: grey;
-  text-align: center;
-}
-.discount-percentage {
-  background-color: rgba(128, 128, 128, 0.543);
-  text-align: center;
-  height: 350px;
+.nav-list {
+  background-color: white;
+  box-shadow: 0px 0px 10px lightgray;
+  margin: 0;
+  padding: 1rem 0;
+  /* border-radius:  */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-/* SALES SECTION ENDS*/
+.nav-item {
+  list-style: none;
+  margin-right: 2rem;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.nav-item:first-child {
+  margin-right: auto;
+  margin-left: 2rem;
+}
+
+.nav-item a:hover {
+  color: blueviolet;
+  text-decoration: underline;
+}
+
+#logo {
+  color: blue !important;
+}

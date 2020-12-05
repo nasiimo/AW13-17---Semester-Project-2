@@ -7,13 +7,30 @@
   </head>
   <body>
     <!-- HEADER SECTION-->
-    <div class="header"></div>
     <nav>
-      <ul>
-        <li>Home</li>
-        <li>Products</li>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="index.html" id="logo">SneakerZilla</a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="products.html">Products</a>
+        </li>
+        <li class="nav-item">
+          <a href="cart.html">Cart</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">Login</a>
+        </li>
       </ul>
     </nav>
+
+    <div class="home-header">
+      <h1>Welcome to SneakerZilla</h1>
+    </div>
+
     <!-- HEADER SECTION ENDS-->
 
     <!-- SALES SECTION -->
@@ -29,14 +46,18 @@
     </div>
     <!-- SALES SECTION ENDS-->
 
+    <div class="product-search">
+      <input type="text" name="search" placeholder="Search" id="search" />
+    </div>
     <div class="product-container">
       <div class="product-card">
         <div class="image-container"><p>Image container</p></div>
         <div class="info-container">
           <p class="product-title">*Product title*</p>
           <p class="product-price">*Product Price*</p>
-          <button class="btnAdc">Add to cart</button>
         </div>
+
+        <button class="btnAdc">Add to cart</button>
       </div>
 
       <div class="product-card">

@@ -1,0 +1,33 @@
+/* PRODUCT SECTION */
+.product-container {
+  //Max-width keeps the cards from not being stretched
+  /* max-width: 1440px; */
+  @include grid-6;
+  grid-gap: 10px;
+  margin-bottom: 50px;
+}
+.product-card {
+  //Min-width keeps the cards from not being squeezed
+  /* min-width: 224px; */
+  border: 1px solid black;
+}
+.image-container {
+  min-height: 180px;
+  border: 1px solid black;
+  text-align: center;
+  p {
+    padding-top: 65px;
+  }
+}
+.info-container {
+  text-align: center;
+}
+.product-search {
+  margin-bottom: 20px;
+}
+#search {
+  width: 100%;
+  height: 30px;
+  border: 1px solid grey;
+}
+/* PRODUCT SECTION ENDS*/
