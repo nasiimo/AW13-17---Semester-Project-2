@@ -37,7 +37,7 @@ console.log(bannerUrl);
     json.forEach(function (products) {
       container.innerHTML += `<div class="product-card">
                                 <a id="redirect" href="product-details.html?id=${products.id}">
-                                <div class="image-container"><img id ="prod-img" src="http://localhost:1337/uploads/thumbnail_trendest_studio_XZ_3_Em_AI_Wuz0_unsplash_66b7951ba2.jpg"><img></div>
+                                <div class="image-container"><img src="http://localhost:1337/uploads/trendest_studio_XZ_3_Em_AI_Wuz0_unsplash_66b7951ba2.jpg" width="100%"><img></div>
                                 <div class="info-container">
                                     <p class="product-title">${products.title}</p>
                                     <p class="product-price">$${products.price}</p>

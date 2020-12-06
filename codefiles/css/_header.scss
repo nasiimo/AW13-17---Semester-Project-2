@@ -1,5 +1,10 @@
 .home-header {
-  min-height: 65vh;
+  min-height: 50vh;
+  position: relative;
+}
+
+.banner {
+  position: absolute;
 }
 
 .home-header h1 {

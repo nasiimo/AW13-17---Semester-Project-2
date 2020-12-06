@@ -8,17 +8,22 @@
   @include grid-2;
   grid-gap: 0.5em;
   margin-bottom: 50px;
+  position: relative;
 }
 .christmas-sale {
   background-color: grey;
   text-align: center;
-  height: 50vh;
+  height: 80vh;
 }
 .discount-percentage {
   background-color: rgba(128, 128, 128, 0.543);
   text-align: center;
   height: 350px;
-  height: 50vh;
+  height: 80vh;
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }
 /* SALES SECTION ENDS*/
 
@@ -71,3 +76,22 @@
 #logo {
   color: blue !important;
 }
+
+/* .parent {
+  height: 100px;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.parent:first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+} */
