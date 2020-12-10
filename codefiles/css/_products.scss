@@ -30,5 +30,10 @@
   text-align: center;
   min-height: 120px;
 }
-
 /* PRODUCT SECTION ENDS*/
+
+/* PRODUCT DETAILS*/
+.details-container {
+  @include grid-2;
+}
+/* PRODUCT DETAILS ENDS */

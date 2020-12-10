@@ -1,4 +1,5 @@
 import { baseUrl } from "./settings/api.js";
+import displayMessage from "./components/displayMessage.js";
 
 const productsUrl = baseUrl + "products";
 
@@ -17,7 +18,7 @@ console.log(bannerUrl);
 
     bannerContainer.innerHTML = "";
 
-    bannerContainer.innerHTML += `<img src="http://localhost:1337/uploads/photo_1544085311_11a028465b03_29d7651dcc.jpeg" height="700px" width="100%"></img>`;
+    bannerContainer.innerHTML += `<img src="http://localhost:1337/uploads/photo_1544085311_11a028465b03_29d7651dcc.jpeg" width="100%"></img>`;
   } catch (error) {
     console.log(error);
   }
@@ -36,7 +37,7 @@ console.log(bannerUrl);
 
     json.forEach(function (products) {
       container.innerHTML += `<div class="product-card">
-                                <a id="redirect" href="product-details.html?id=${products.id}">
+                                <a id="redirect" href="details.html?id=${products.id}"/>
                                 <div class="image-container"><img src="http://localhost:1337/uploads/trendest_studio_XZ_3_Em_AI_Wuz0_unsplash_66b7951ba2.jpg" width="100%"><img></div>
                                 <div class="info-container">
                                     <p class="product-title">${products.title}</p>

@@ -2,12 +2,12 @@
 /* Button-backgrounds */
 /* Button-text-color */
 .home-header {
-  min-height: 50vh;
-  position: relative;
+  /* position: relative; */
+  max-height: 350px;
 }
 
 .banner {
-  position: absolute;
+  /* position: absolute; */
 }
 
 .home-header h1 {
@@ -55,58 +55,41 @@
 }
 
 /* PRODUCT SECTION ENDS*/
-/* SALES SECTION */
-.sales-container {
+/* PRODUCT DETAILS*/
+.details-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   /* grid-template-columns: repeat(auto-fill, minmax(720px, 2fr)); */
-  grid-gap: 0.5em;
-  margin-bottom: 50px;
-  position: relative;
 }
 
-.christmas-sale {
-  background-color: grey;
-  text-align: center;
-  height: 80vh;
-}
-
-.discount-percentage {
-  background-color: rgba(128, 128, 128, 0.543);
-  text-align: center;
-  height: 350px;
-  height: 80vh;
-}
-
-.discount-percentage img {
+/* PRODUCT DETAILS ENDS */
+.message {
   width: 100%;
-  height: 100%;
+  padding: 1rem;
+  border: 1px solid grey;
+  color: grey;
 }
 
-/* SALES SECTION ENDS*/
-/* SHIPPING SECTION */
-.shipping {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 0.5em;
-  min-height: 300px;
+.message.error {
+  border-color: red;
+  color: white;
+  background: red;
 }
 
-.shipping > div {
-  background: #eee;
-  padding: 1em;
+.message.warning {
+  border-color: orange;
+  color: white;
+  background: orange;
 }
 
-.shipping-content {
-  text-align: center;
-  padding-top: 100px;
+.message.success {
+  border-color: green;
+  color: white;
+  background: green;
 }
 
-/* SHIPPING SECTION ENDS */
 .nav-list {
   background-color: white;
   -webkit-box-shadow: 0px 0px 10px lightgray;
@@ -149,6 +132,61 @@
   color: blue !important;
 }
 
+/* SALES SECTION */
+.sales-container {
+  margin-top: 300px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: repeat(auto-fill, minmax(720px, 2fr)); */
+  grid-gap: 0.5em;
+  margin-bottom: 50px;
+  /* position: relative; */
+}
+
+.christmas-sale {
+  width: 100%;
+  background-color: grey;
+  text-align: center;
+  height: 500px;
+}
+
+.discount-percentage {
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.543);
+  text-align: center;
+  height: 350px;
+  height: 500px;
+}
+
+.discount-percentage img {
+  width: 100%;
+  height: 100%;
+}
+
+/* SALES SECTION ENDS*/
+/* SHIPPING SECTION */
+.shipping {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.5em;
+  min-height: 300px;
+}
+
+.shipping > div {
+  background: #eee;
+  padding: 1em;
+}
+
+.shipping-content {
+  text-align: center;
+  padding-top: 100px;
+}
+
+/* SHIPPING SECTION ENDS */
 /* .parent {
   height: 100px;
   padding-bottom: 56.25%;
