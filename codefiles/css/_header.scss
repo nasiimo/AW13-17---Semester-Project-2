@@ -1,12 +1,8 @@
 .home-header {
-  /* position: relative; */
-  max-height: 350px;
-}
-
-.banner {
-  /* position: absolute; */
-}
-
-.home-header h1 {
-  padding-top: 200px;
+  display: block;
+  max-width: 1440px;
+  margin: 0 auto;
+  img {
+    width: 100%;
+  }
 }
