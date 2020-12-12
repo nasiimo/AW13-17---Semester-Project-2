@@ -11,18 +11,30 @@
   width: 100%;
 }
 
+.products-header {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.products-header img {
+  width: 100%;
+}
+
 /* PRODUCT SECTION */
 .product-search {
   max-width: 1440px;
   margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 10px;
+  text-align: center;
 }
 
 #search {
+  margin-top: 30px;
   width: 100%;
   height: 30px;
-  border: 1px solid grey;
+  border: 1px solid #996515;
+  border-radius: 7px;
+  margin-bottom: 30px;
+  padding-left: 20px;
 }
 
 #redirect {
@@ -36,9 +48,10 @@
   -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 10px;
-  margin-bottom: 50px;
   text-align: center;
   max-width: 1440px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .product-card {
@@ -67,6 +80,16 @@
 }
 
 /* PRODUCT DETAILS ENDS */
+.btnAtc {
+  width: 70%;
+  margin: 0 auto;
+  height: 30px;
+  background-color: white;
+  color: #996515;
+  border: 1px solid #996515;
+  cursor: pointer;
+}
+
 .message {
   width: 100%;
   padding: 1rem;
@@ -117,7 +140,7 @@
 
 .nav-item a {
   text-decoration: none;
-  color: black;
+  color: #996515;
 }
 
 .nav-item:first-child {
@@ -126,12 +149,11 @@
 }
 
 .nav-item a:hover {
-  color: blueviolet;
   text-decoration: underline;
 }
 
 #logo {
-  color: blue !important;
+  color: #996515 !important;
 }
 
 /* SALES SECTION */
@@ -166,39 +188,25 @@
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 0.5em;
-  min-height: 300px;
+  /*  min-height: 300px;
+  max-width: 1440px; */
   max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 
 .shipping > div {
-  background: #eee;
+  /* background: #eee; */
   padding: 1em;
 }
 
 .shipping-content {
   text-align: center;
-  padding-top: 100px;
+  font-size: 1.3rem;
+  color: #996515;
 }
 
 /* SHIPPING SECTION ENDS */
-/* .parent {
-  height: 100px;
-  padding-bottom: 56.25%;
-  position: relative;
-}
-
-.parent:first-child {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-#main {
-  width: 100%;
-  height: 100%;
-} */
 .details-container {
   display: -ms-grid;
   display: grid;
@@ -206,5 +214,9 @@
       grid-template-columns: 1fr 1fr;
   justify-items: center;
   /* grid-template-columns: repeat(auto-fill, minmax(720px, 2fr)); */
+}
+
+.cont-align {
+  padding-top: 30px;
 }
 /*# sourceMappingURL=style.css.map */

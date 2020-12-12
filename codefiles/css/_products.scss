@@ -2,13 +2,16 @@
 .product-search {
   max-width: 1440px;
   margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 10px;
+  text-align: center;
 }
 #search {
+  margin-top: 30px;
   width: 100%;
   height: 30px;
-  border: 1px solid grey;
+  border: 1px solid $primaryColor;
+  border-radius: 7px;
+  margin-bottom: 30px;
+  padding-left: 20px;
 }
 #redirect {
   text-decoration: none;
@@ -17,9 +20,10 @@
 .product-container {
   @include grid-5;
   grid-gap: 10px;
-  margin-bottom: 50px;
   text-align: center;
   max-width: 1440px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 .product-card {
   box-shadow: 0px 0px 10px lightgray;
@@ -39,3 +43,12 @@
   @include grid-2;
 }
 /* PRODUCT DETAILS ENDS */
+.btnAtc {
+  width: 70%;
+  margin: 0 auto;
+  height: 30px;
+  background-color: white;
+  color: $primaryColor;
+  border: 1px solid $primaryColor;
+  cursor: pointer;
+}

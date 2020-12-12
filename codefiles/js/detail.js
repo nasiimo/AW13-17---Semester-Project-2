@@ -19,18 +19,22 @@ const productUrl = baseUrl + "products/" + id;
 
 //--
 
-/* (async function () {
+(async function () {
+  const container = document.querySelector(".detail-info");
+
   try {
     const response = await fetch(productUrl);
-    const json = response.json();
+    const json = await response.json();
 
-    const container = document.querySelector(".detail-info");
+    console.log(json);
 
-    //Need to iterate over this object with a forEach loop
+    container.innerHTML = "";
+
     json.forEach(function (products) {
-      container.innerHTML = `<input type="text" placeholder = "${products.id}"/>`;
+      container.innerHTML += `<p>${products.title}</p>
+                              <p>${products.price}</p>`;
     });
   } catch (error) {
     console.log(error);
   }
-})(); */
+})();
