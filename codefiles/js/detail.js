@@ -1,4 +1,5 @@
 import { baseUrl } from "./settings/api.js";
+import { handleClick } from "./utils/handleClick.js";
 
 const queryString = document.location.search;
 
@@ -26,13 +27,16 @@ const productUrl = baseUrl + "products/" + id;
     const response = await fetch(productUrl);
     const json = await response.json();
 
-    console.log(json);
-
     container.innerHTML = "";
 
-    json.forEach(function (products) {
-      container.innerHTML += `<p>${products.title}</p>
-                              <p>${products.price}</p>`;
+    container.innerHTML += `<h1>${json.title}</h1>
+                              <h3>${json.price}</h3>
+                              <p>${json.description}</p>
+                              <button class="btnAtc" data-id="${json.id}" data-name="${json.title}" data-price="${json.price}">Add to cart</button>`;
+
+    const favButtons = document.querySelectorAll(".detail-info button");
+    favButtons.forEach((button) => {
+      button.addEventListener("click", handleClick);
     });
   } catch (error) {
     console.log(error);

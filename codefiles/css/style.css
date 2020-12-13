@@ -160,31 +160,34 @@
   color: #996515 !important;
 }
 
-/* SALES SECTION */
-/* .sales-container {
-  margin-top: 20px;
-  @include grid-2;
-  grid-gap: 0.5em;
-  margin-bottom: 50px;
-  max-width: 1440px;
+label {
+  display: block;
 }
-.christmas-sale {
-  width: 100%;
-  background-color: grey;
-  height: 500px;
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
 }
-.discount-percentage {
+
+form > div {
+  margin-bottom: 1rem;
+}
+
+form input {
   width: 100%;
-  background-color: rgba(128, 128, 128, 0.543);
-  text-align: center;
-  height: 350px;
-  height: 500px;
-  img {
-    width: 100%;
-    height: 100%;
-  }
-} */
-/* SALES SECTION ENDS*/
+  padding: 0.4rem;
+}
+
+#login {
+  margin-top: 30px;
+  width: 100%;
+  height: 40px;
+  background-color: darkblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
 /* SHIPPING SECTION */
 .shipping {
   display: -ms-grid;
@@ -192,8 +195,6 @@
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 0.5em;
-  /*  min-height: 300px;
-  max-width: 1440px; */
   max-width: 1440px;
   margin: 0 auto;
   margin-top: 30px;
@@ -222,5 +223,35 @@
 
 .cont-align {
   padding-top: 30px;
+}
+
+.detail-info {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.message {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid grey;
+  color: grey;
+}
+
+.message.error {
+  border-color: red;
+  color: white;
+  background: red;
+}
+
+.message.warning {
+  border-color: orange;
+  color: white;
+  background: orange;
+}
+
+.message.success {
+  border-color: green;
+  color: white;
+  background: green;
 }
 /*# sourceMappingURL=style.css.map */

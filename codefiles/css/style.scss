@@ -4,39 +4,12 @@
 @import "_products";
 @import "_message";
 @import "_nav";
-
-/* SALES SECTION */
-/* .sales-container {
-  margin-top: 20px;
-  @include grid-2;
-  grid-gap: 0.5em;
-  margin-bottom: 50px;
-  max-width: 1440px;
-}
-.christmas-sale {
-  width: 100%;
-  background-color: grey;
-  height: 500px;
-}
-.discount-percentage {
-  width: 100%;
-  background-color: rgba(128, 128, 128, 0.543);
-  text-align: center;
-  height: 350px;
-  height: 500px;
-  img {
-    width: 100%;
-    height: 100%;
-  }
-} */
-/* SALES SECTION ENDS*/
+@import "_login";
 
 /* SHIPPING SECTION */
 .shipping {
   @include grid-3;
   grid-gap: 0.5em;
-  /*  min-height: 300px;
-  max-width: 1440px; */
   max-width: 1440px;
   margin: 0 auto;
   margin-top: 30px;
@@ -58,4 +31,34 @@
 
 .cont-align {
   padding-top: 30px;
+}
+
+.detail-info {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.message {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid grey;
+  color: grey;
+}
+
+.message.error {
+  border-color: red;
+  color: white;
+  background: red;
+}
+
+.message.warning {
+  border-color: orange;
+  color: white;
+  background: orange;
+}
+
+.message.success {
+  border-color: green;
+  color: white;
+  background: green;
 }
