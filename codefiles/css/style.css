@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Text */
 /* Button-backgrounds */
 /* Button-text-color */
@@ -84,6 +85,7 @@
 }
 
 /* PRODUCT DETAILS ENDS */
+/* ATC BUTTON */
 .btnAtc {
   width: 70%;
   margin: 0 auto;
@@ -92,6 +94,47 @@
   color: #996515;
   border: 1px solid #996515;
   cursor: pointer;
+}
+
+/* ATC BUTTON ENDS */
+/* CREATE PRODUCT */
+.creation-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  /* grid-template-columns: repeat(auto-fill, minmax(720px, 2fr)); */
+}
+
+.creation-form {
+  width: 100%;
+}
+
+#description {
+  max-width: 410px;
+  min-width: 410px;
+  min-height: 60px;
+}
+
+.createBtn {
+  max-width: 410px;
+  min-width: 410px;
+  min-height: 35px;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.upload-image  {
+  width: 100%;
+  border: 1px solid black;
+}
+
+/* CREATE PRODUCT ENDS */
+.toggle {
+  display: none;
 }
 
 .message {

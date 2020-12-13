@@ -1,13 +1,10 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>Add Product</title>
     <link href="css/style.css" rel="stylesheet" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-      rel="stylesheet"
-    />
     <link rel="icon" href="data:;base64,=" />
   </head>
   <body>
@@ -37,26 +34,32 @@
       </nav>
     </div>
     <!-- nav ends -->
+    <h1>Create Product</h1>
+    <div class="creation-container">
+      <!-- <div class="menu-container"></div> -->
 
-    <div class="form-container">
-      <div class="menu-container"></div>
+      <div class="upload-image">
+        <h1>image container</h1>
+      </div>
 
-      <form>
-        <h1>Login</h1>
+      <form class="creation-form">
         <div class="message-container"></div>
 
         <div>
-          <label for="username"> Username/email</label>
-          <input id="username" />
+          <label for="name">Name</label>
+          <input id="name" />
         </div>
         <div>
-          <label for="password"> Password</label>
-          <input id="password" />
+          <label for="price">Price</label>
+          <input id="price" />
         </div>
-        <button id="login">submit</button>
+        <div>
+          <label for="description">Description</label>
+          <textarea id="description"></textarea>
+        </div>
+        <button class="createBtn">Create product</button>
       </form>
     </div>
-    <script src="js/login.js" type="module"></script>
-    <!--  -->
+    <script src="js/add.js" type="module"></script>
   </body>
 </html>

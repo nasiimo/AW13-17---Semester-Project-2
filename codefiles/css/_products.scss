@@ -43,6 +43,8 @@
   @include grid-2;
 }
 /* PRODUCT DETAILS ENDS */
+
+/* ATC BUTTON */
 .btnAtc {
   width: 70%;
   margin: 0 auto;
@@ -51,4 +53,40 @@
   color: $primaryColor;
   border: 1px solid $primaryColor;
   cursor: pointer;
+}
+/* ATC BUTTON ENDS */
+
+/* CREATE PRODUCT */
+.creation-container {
+  @include grid-2;
+}
+
+.creation-form {
+  width: 100%;
+}
+
+#description {
+  max-width: 410px;
+  min-width: 410px;
+  min-height: 60px;
+}
+
+.createBtn {
+  max-width: 410px;
+  min-width: 410px;
+  min-height: 35px;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.upload-image  {
+  width: 100%;
+  border: 1px solid black;
+}
+/* CREATE PRODUCT ENDS */
+
+.toggle {
+  display: none;
 }
