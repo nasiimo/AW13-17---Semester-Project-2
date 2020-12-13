@@ -20,6 +20,10 @@
   width: 100%;
 }
 
+.cart-heading {
+  margin: 0 auto;
+}
+
 /* PRODUCT SECTION */
 .product-search {
   max-width: 1440px;
